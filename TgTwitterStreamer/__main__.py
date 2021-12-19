@@ -133,7 +133,10 @@ class TgStreamer(AsyncStream):
                 spli_ = word.split("/")
                 if len(spli_) >= 2 and spli_[-2] in ["photo", "video"]:
                     text = text.replace(word, "")
-
+                    
+        msg = event.text
+        x = msg.split("Follow")
+        post = x[0]
         text = Var.CUSTOM_TEXT.format(
             SENDER=user["name"],
             SENDER_USERNAME="@" + username,
