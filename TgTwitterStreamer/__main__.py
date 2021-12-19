@@ -114,8 +114,7 @@ class TgStreamer(AsyncStream):
             text = text.replace("⮞ 𝐏𝐎𝐆𝐎𝐇𝐔𝐁","")
             text = text.replace("on","")
             text = text.replace("For more 🔥🔥🔥 coords follow @pogohubofficial","")
-            text = text.replace("Follow on Instagram: https://www.instagram.com/accounts/login/
-","")
+            text = text.replace("Follow on Instagram: https://www.instagram.com/accounts/login/","")
             text = text.replace("@pogohubofficial","")
 
         if Var.MUST_INCLUDE and Var.MUST_INCLUDE not in text:
