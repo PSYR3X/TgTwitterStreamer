@@ -111,7 +111,7 @@ class TgStreamer(AsyncStream):
         else:
             text = tweet["text"]
             text = text.replace("@PGM_VR","")
-            text = text.replace("Follow","")
+            text = text.replace(" Follow on Instagram: https://www.instagram.com/accounts/login/ ","")
             text = text.replace("@pogohubofficial","")
             text = text.replace("&gt;&gt;","")
             text = text.replace("follow","")
