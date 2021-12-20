@@ -113,7 +113,7 @@ class TgStreamer(AsyncStream):
             text = text.replace("@PGM_VR","")
             text = text.replace("Follow","")
             text = text.replace("@pogohubofficial","")
-            text = text.replace("&gt;","")
+            text = text.replace("&gt;&gt;","")
 
         if Var.MUST_INCLUDE and Var.MUST_INCLUDE not in text:
             return
