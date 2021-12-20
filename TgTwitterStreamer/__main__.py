@@ -112,9 +112,7 @@ class TgStreamer(AsyncStream):
             text = tweet["text"]
             text = text.replace("@PGM_VR","")
             text = text.replace(" Follow on Instagram: https://www.instagram.com/accounts/login/ ","")
-            text = text.replace("@pogohubofficial","")
-            text = text.replace("&gt;&gt;","")
-            text = text.replace("follow","")
+            text = text.replace(" For more 🔥🔥🔥 coords follow @pogohubofficial ","")
 
         if Var.MUST_INCLUDE and Var.MUST_INCLUDE not in text:
             return
