@@ -110,7 +110,7 @@ class TgStreamer(AsyncStream):
             text = content
         else:
             text = tweet["text"]
-            text = text.split("@PGM_VR")
+            text = text.replace("@PGM_VR")
 
         if Var.MUST_INCLUDE and Var.MUST_INCLUDE not in text:
             return
