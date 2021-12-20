@@ -143,6 +143,11 @@ class TgStreamer(AsyncStream):
                 spli_ = word.split("/")
                 if len(spli_) >= 2 and spli_[-2] in ["photo", "video"]:
                     text = text.replace(word, "")
+        for word in text.split():
+            if word.startswith("https://www.instagram.com"):
+                spli_ = word.split("/")
+                if len(spli_) >= 2 and spli_[-2] in ["photo", "video"]:
+                    text = text.replace(word, "")                   
                     
         text = Var.CUSTOM_TEXT.format(
             SENDER=user["name"],
