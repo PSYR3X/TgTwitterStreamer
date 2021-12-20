@@ -110,8 +110,9 @@ class TgStreamer(AsyncStream):
             text = content
         else:
             text = tweet["text"]
-            text = text.replace("@PGM_VR","")
             text = text.replace(" Follow on Instagram: https://www.instagram.com/accounts/login/ ","")
+            text = text.replace("Follow","")
+            text = text.replace("@PGM_VR","")
             text = text.replace(" For more 🔥🔥🔥 coords follow @pogohubofficial ","")
             text = text.replace("\n\n\n","\n")
 
